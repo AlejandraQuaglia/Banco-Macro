@@ -268,4 +268,11 @@ view: lkp_clientes_completa {
     type: count
     drill_fields: []
   }
+
+  dimension: cliente_cobis{
+    type: string
+    sql: concat(cast(${TABLE}.codigo_cliente as String)," - ", ${TABLE}.nombre);;
+
+  }
+
 }
