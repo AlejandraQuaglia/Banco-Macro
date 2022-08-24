@@ -119,10 +119,6 @@ view: agr_situacion_cartera {
 
   }
 
-  measure: count {
-    type: count
-    drill_fields: []
-  }
 
   measure: saldo_sum {
     type: sum
@@ -136,5 +132,9 @@ view: agr_situacion_cartera {
     sql:  ${TABLE}.Saldo_promedio_mes;;
   }
 
+  measure: count {
+    type: count
+    drill_fields: []
+  }
 
 }
